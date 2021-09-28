@@ -1,0 +1,51 @@
+.minimal-header {
+  .slide-number {
+    left: 28px!important;
+    font-size: 16px!important;
+    color: $white;
+  }
+  .header-aside {
+    .menu-btn {
+      div {
+        background-color: $white!important;
+      }
+    }
+    &:nth-child(2) {
+      background-image: url(../images/bg_side_left_black.png);
+    }
+    &:nth-child(3) {
+      background-image: url(../images/bg_side_right_black.png);
+      color: $white;
+      .header-aside-txt {
+        span {
+          color: white;
+        }
+      }
+    }
+    .line {
+      border-color: $white;
+    }
+  }
+  .scroll-btn {
+    color: $white;
+  }
+}
+
+
+.minimal {
+  background-image: url(../images/bg_minimal.png);
+  color: $white;
+  .sec-hero {
+    height: 100vh;
+    button {
+      width: 184px;
+      height: 82px;
+      background: $black;
+      border: 1px solid $white;
+      font-size: 19px;
+      letter-spacing: 0.05em;
+      @include font-din(demibold);
+      margin-top: 222px;      
+    }
+  }
+}
