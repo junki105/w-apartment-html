@@ -11,6 +11,7 @@
     height: 100vh;
     background-size: cover;
     z-index: 100;
+    transition: all .5s ease-in-out;
     &:nth-child(2) {
       left: 0;
       background-image: url(../images/bg_side_left.png);
@@ -65,7 +66,6 @@
         letter-spacing: 0.2em;
         line-height: 29px;
         text-align: center;
-        color: $black;
         @include transform(rotate(90deg));
         &:first-child {
           width: 88px;
@@ -118,6 +118,71 @@
   }
 }
 
+#fp-nav{
+  top: unset;
+  bottom: 86px;
+  left: 52px!important;
+  z-index: 500;
+  ul {
+    display: inline-flex;
+    flex-direction: column;
+    li {
+      width: 16px;
+      height: 2px;
+      margin: 6px 0;
+      border-radius: 1px;
+      background: $black35;
+      a {
+        span {
+          width: 16px;
+          height: 2px;
+          border-radius: 1px;
+          background: $black35;
+          top: 0;
+          left: 0;
+          margin: unset;
+          opacity: 1;
+          transition: background-color 1s ease-in-out;
+        }
+        &.active, &:hover {
+          span {
+            width: 28px;
+            height: 3px;
+            border-radius: 1.5px;
+            background: #506285;
+            top: 0;
+            left: 0;
+            margin: unset;
+            opacity: 1;
+          }
+        }
+      }
+      &:hover {
+        a {
+          span {
+            width: 20px;
+            height: 2px;
+            border-radius: 1.5px;
+            background: #506285;
+          }
+          &.active {
+            span {
+              width: 28px;
+              height: 3px;
+              border-radius: 1.5px;
+              background: #506285;
+              top: 0;
+              left: 0;
+              margin: unset;
+              opacity: 1;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
 .fp-slidesNav{
   top: unset;
   bottom: 86px;
@@ -180,5 +245,27 @@
         }
       }
     }
+  }
+}
+.ctr-btn {
+  @include font-din(bold);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  color: #00000050;
+  width: 39px;
+  height: 16px;
+  justify-content: space-between!important;
+  position: absolute;
+  @include transform(translateY(-50%));
+  top: 50%;
+  z-index: 999;
+  img {
+    width: 8px;
+  }
+  &#moveLeft {
+    left: 124px;
+  }
+  &#moveRight {
+    right: 124px;
   }
 }

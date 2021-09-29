@@ -3,10 +3,13 @@
 // -----------------------------------------------------------------------------
 
 .home {
+  position: relative;	
+  width: 100%!important;
+	transform: none!important;
   .section {
     position: relative;
     background-size: cover;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
     .fp-tableCell {
       vertical-align: top;
     }
@@ -16,6 +19,7 @@
     .slide {
       background-size: cover;
       background-repeat: no-repeat;
+      position: relative;
       &:first-child {
         background-image: url(../images/bg_top01.png);
       }
@@ -28,55 +32,6 @@
       &:nth-child(4) {
         background-image: url(../images/bg_top04.png);
       }
-      &-content {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        width: 823px;
-        height: 140.5px;
-        margin: 500px auto 0;
-        h1 {
-          font-size: 32px;
-          letter-spacing: 0.05em;
-          line-height: 48px;
-          text-align: right;
-          @include font-ud(demibold);
-          padding-right: 80px;
-          border-right: 1px solid #00000025;
-          width: 50%;
-        }
-        p {
-          font-size: 13px;
-          letter-spacing: 0.1em;
-          line-height: 28px;
-          text-align: left;
-          padding-left: 80px;
-          width: 50%;
-          @include font-ud(regular);
-        }
-      }
-    }
-    .ctr-btn {
-      @include font-din(bold);
-      font-size: 10px;
-      letter-spacing: 0.05em;
-      color: #00000050;
-      width: 39px;
-      height: 16px;
-      justify-content: space-between;
-      position: absolute;
-      @include transform(translateY(-50%));
-      top: 50%;
-      z-index: 999;
-      img {
-        width: 8px;
-      }
-      &#moveLeft {
-        left: 124px;
-      }
-      &#moveRight {
-        right: 124px;
-      }
     }
   }
   .sec-ttl {
@@ -84,6 +39,71 @@
     letter-spacing: 0.05em;
     @include font-din(demibold);
   }
+  .fp-section {
+    width: 100%!important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 0;
+    transition: all 2s ease-in-out;
+  }
+  .fp-section.active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+  }
+  .content-line {
+    border-left: 1px solid #00000050;
+    width: 1px;
+    height: 621px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 190px;
+    z-index: 200;
+    margin: auto;
+    transition: all 1s ease-in-out;
+    display: none;
+  }
+}
+
+.hero {
+  position: relative;
+  .slide-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 823px;
+    height: 140.5px;
+    position: absolute;
+    top: 660px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 200;
+    h1 {
+      font-size: 32px;
+      letter-spacing: 0.05em;
+      line-height: 48px;
+      text-align: right;
+      @include font-ud(demibold);
+      padding-right: 80px;
+      border-right: 1px solid #00000025;
+      width: 50%;
+    }
+    p {
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      line-height: 28px;
+      text-align: left;
+      padding-left: 80px;
+      width: 50%;
+      @include font-ud(regular);
+    }
+  }
+
 }
 
 .support {
@@ -162,8 +182,15 @@
 
 .news {
   background-image: url(../images/bg_top_news.png);
+  .content {
+    padding-bottom: 400px;
+  }
   &-content {
     margin-top: 67px;
+    .sec-link-btn {
+      margin-right: 114px!important;
+      margin-top: 110px!important;
+    }
   }
 }
 
@@ -259,6 +286,9 @@
   .sec-ttl {
     font-family: 'felix';
     font-weight: normal;
+  }  
+  .content {
+    padding-bottom: 400px;
   }
   .article-logo {
     margin-top: 54px!important;
@@ -309,6 +339,9 @@
 
 .blog {
   background-image: url(../images/bg_top_blog.png);
+  .content {
+    padding-bottom: 400px;
+  }
   &-content {
     margin-top: 27px;
     display: flex;

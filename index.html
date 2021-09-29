@@ -28,7 +28,8 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <header class="header">
-      <div class="header-aside">
+      <h1 class="logo"><a href=""><img src="./assets/images/logo.png" alt="" id="logo"></a></h1>
+      <div class="header-aside" id="aside_left">
         <div class="menu-btn" id="menu_btn">
           <div></div>
           <div></div>
@@ -37,87 +38,49 @@
         <div class="line"></div>
         <div id="num" class="slide-number">01</div>
       </div>
-      <div class="header-aside">
-        <a href="" class="login-btn"><img src="./assets/images/ico_login.png" alt=""></a>
+      <div class="header-aside" id="aside_right">
+        <a href="" class="login-btn"><img src="./assets/images/ico_login.png" alt="" id="login_img"></a>
         <div class="header-aside-txt">
           <span class="btn">説明会情報</span>
-          <img src="./assets/images/side_link.png" alt="">
+          <img src="./assets/images/side_link.png" alt="" id="side_link">
           <span class="btn">資料請求</span>
         </div>
         <div class="copyright">
           © W-APARTMENT
         </div>
         <div class="line"></div>
-      </div>
+      </div>        
+      <button id="moveDown" class="btn scroll-btn">
+        SCROLL
+        <img src="./assets/images/ico_arrow_down.png" alt="">
+      </button>
+      <button id="moveLeft" class="ctr-btn btn"><img src="./assets/images/ico_prev.png" alt="">PREV</button>
+      <button id="moveRight" class="ctr-btn btn">NEXT<img src="./assets/images/ico_next.png" alt=""></button>
     </header>
     <div id="fullpage" class="home">
-      <div class="section">
-        <h1 class="logo"><a href=""><img src="./assets/images/logo.png" alt=""></a></h1>
-        <button id="moveLeft" class="ctr-btn btn"><img src="./assets/images/ico_prev.png" alt="">PREV</button>
-        <button id="moveRight" class="ctr-btn btn">NEXT<img src="./assets/images/ico_next.png" alt=""></button>
-        <div class="slide">
-          <div class="slide-content">
-            <h1>
-              キャッチコピーあああ
-              ああああああ
-            </h1>
-            <p>
-              ショルダーコピーショルダーコピーショルダーコピー
-              ショルダーコピーショルダーコピー<br>
-              ショルダーコピーショルダーコピーショルダーコピー
-              ショルダーコピー
-            </p>
-          </div>
+      <div class="section hero">
+        <div class="slide-content">
+          <h1>
+            キャッチコピーあああ
+            ああああああ
+          </h1>
+          <p>
+            ショルダーコピーショルダーコピーショルダーコピー
+            ショルダーコピーショルダーコピー<br>
+            ショルダーコピーショルダーコピーショルダーコピー
+            ショルダーコピー
+          </p>
         </div>
         <div class="slide">
-          <div class="slide-content">
-            <h1>
-              キャッチコピーあああ
-              ああああああ
-            </h1>
-            <p>
-              ショルダーコピーショルダーコピーショルダーコピー
-              ショルダーコピーショルダーコピー<br>
-              ショルダーコピーショルダーコピーショルダーコピー
-              ショルダーコピー
-            </p>
-          </div>
         </div>
         <div class="slide">
-          <div class="slide-content">
-            <h1>
-              キャッチコピーあああ
-              ああああああ
-            </h1>
-            <p>
-              ショルダーコピーショルダーコピーショルダーコピー
-              ショルダーコピーショルダーコピー<br>
-              ショルダーコピーショルダーコピーショルダーコピー
-              ショルダーコピー
-            </p>
-          </div>
         </div>
         <div class="slide">
-          <div class="slide-content">
-            <h1>
-              キャッチコピーあああ
-              ああああああ
-            </h1>
-            <p>
-              ショルダーコピーショルダーコピーショルダーコピー
-              ショルダーコピーショルダーコピー<br>
-              ショルダーコピーショルダーコピーショルダーコピー
-              ショルダーコピー
-            </p>
-          </div>
         </div>
-        <button id="moveDown" class="btn scroll-btn">
-          SCROLL
-          <img src="./assets/images/ico_arrow_down.png" alt="">
-        </button>
+        <div class="slide">
+        </div>
       </div>
       <div class="section support">
-        <h1 class="logo"><a href=""><img src="./assets/images/logo.png" alt=""></a></h1>
         <div class="content">
           <h2 class="sec-ttl">SUPPORT</h2>
           <div class="link-group">
@@ -126,13 +89,8 @@
             <a href="" class="btn">部材支援</a>
           </div>
         </div>
-        <button id="moveDown" class="btn scroll-btn">
-          SCROLL
-          <img src="./assets/images/ico_arrow_down.png" alt="">
-        </button>
       </div>
       <div class="section philosophy">
-        <h1 class="logo"><a href=""><img src="./assets/images/logo.png" alt=""></a></h1>
         <div class="content">
           <h2 class="sec-ttl">W-APARTMENTとは？</h2>
           <div class="philosophy-content">
@@ -146,13 +104,8 @@
             <a href="" class="btn sec-link-btn"><img src="./assets/images/ico_arrow-right.png" alt=""></a>
           </div>
         </div>
-        <button id="moveDown" class="btn scroll-btn">
-          SCROLL
-          <img src="./assets/images/ico_arrow_down.png" alt="">
-        </button>
       </div>
       <div class="section news">
-        <h1 class="logo"><a href=""><img src="./assets/images/logo.png" alt=""></a></h1>
         <div class="content">
           <h2 class="sec-ttl">NEWS</h2>
           <div class="news-content">
@@ -239,13 +192,8 @@
             <a href="" class="btn sec-link-btn"><img src="./assets/images/ico_arrow-right.png" alt=""></a>
           </div>
         </div>
-        <button id="moveDown" class="btn scroll-btn">
-          SCROLL
-          <img src="./assets/images/ico_arrow_down.png" alt="">
-        </button>
       </div>
       <div class="section service">
-        <h1 class="logo"><a href=""><img src="./assets/images/logo_white.png" alt=""></a></h1>
         <div class="content">
           <h2 class="sec-ttl">SERVICE</h2>
           <div class="service-content">
@@ -259,13 +207,8 @@
             <img src="./assets/images/top_support.png" alt="">
           </div>
         </div>
-        <button id="moveDown" class="btn scroll-btn">
-          SCROLL
-          <img src="./assets/images/ico_arrow_down_white.png" alt="">
-        </button>
       </div>
       <div class="section case">
-        <h1 class="logo"><a href=""><img src="./assets/images/logo.png" alt=""></a></h1>
         <div class="content">
           <h2 class="sec-ttl">事例</h2>
           <div class="news-content">
@@ -307,16 +250,49 @@
                 </div>
               </div>
             </article>
+            <article class="home-article">
+              <div class="home-article-left">
+                <h3>売上が100%向上。</h3>
+                <figure>
+                  <img src="./assets/images/top_news.png" alt="">
+                </figure>
+              </div>
+              <div class="home-article-right">
+                <div class="article-logo">
+                  <img src="./assets/images/business_logo.png" alt="">
+                  <span>株式会社〇〇〇〇〇〇〇〇〇</span>
+                </div>
+                <div class="article-content">
+                  <div><span>業種○○○</span></div>
+                  <div><span>従業員数○○○○○</span></div>
+                  <div><span>課題○○○○○○○○○○○○○○</span></div>
+                </div>
+              </div>
+            </article>
+            <article class="home-article">
+              <div class="home-article-left">
+                <h3>売上が100%向上。</h3>
+                <figure>
+                  <img src="./assets/images/top_news.png" alt="">
+                </figure>
+              </div>
+              <div class="home-article-right">
+                <div class="article-logo">
+                  <img src="./assets/images/business_logo.png" alt="">
+                  <span>株式会社〇〇〇〇〇〇〇〇〇</span>
+                </div>
+                <div class="article-content">
+                  <div><span>業種○○○</span></div>
+                  <div><span>従業員数○○○○○</span></div>
+                  <div><span>課題○○○○○○○○○○○○○○</span></div>
+                </div>
+              </div>
+            </article>
             <a href="" class="btn sec-link-btn"><img src="./assets/images/ico_arrow-right.png" alt=""></a>
           </div>
         </div>
-        <button id="moveDown" class="btn scroll-btn">
-          SCROLL
-          <img src="./assets/images/ico_arrow_down.png" alt="">
-        </button>
       </div>
       <div class="section flow">
-        <h1 class="logo"><a href=""><img src="./assets/images/logo.png" alt=""></a></h1>
         <div class="content">
           <h2 class="sec-ttl">ご契約の流れ</h2>
           <div class="flow-content">
@@ -343,13 +319,8 @@
             </div>
           </div>
         </div>
-        <button id="moveDown" class="btn scroll-btn">
-          SCROLL
-          <img src="./assets/images/ico_arrow_down_white.png" alt="">
-        </button>
       </div>
       <div class="section blog">
-        <h1 class="logo"><a href=""><img src="./assets/images/logo.png" alt=""></a></h1>
         <div class="content">
           <h2 class="sec-ttl">ブログ</h2>
           <div class="blog-content">
@@ -416,13 +387,11 @@
           </div>
           <a href="" class="btn sec-link-btn"><img src="./assets/images/ico_arrow-right.png" alt=""></a>
         </div>
-        <button id="moveDown" class="btn scroll-btn">
-          SCROLL
-          <img src="./assets/images/ico_arrow_down.png" alt="">
-        </button>
       </div>
+      <div class="content-line"></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js" integrity="sha512-pYyQWhzi2lV+RM4GmaUA56VPL48oLVvsHmP9tuQ8MaZMDHomVEDjXXnfSVKXayy+wLclKPte0KbsuVoFImtE7w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/common.js" async defer></script>
   </body>
