@@ -145,13 +145,14 @@
       align-items: flex-start;
       width: 840px;
       margin: auto;
-      margin-top: 72px;
       position: relative;
       div {
         width: 50%;
         text-align: left;
       }
       .article-left {
+        padding-top: 72px;
+        border-right: 1px solid #00000050;
         h2 {
           font-weight: normal;
           font-size: 22px;
@@ -169,6 +170,7 @@
       }
       .article-right {
         padding-left: 32px;
+        padding-top: 72px;
         .article-date {
           font-size: 11px;
           letter-spacing: 0.15em;
@@ -199,6 +201,26 @@
           right: 0;
           margin-top: 0;
           margin-right: 0;
+        }
+      }
+      &:first-child {
+        margin-top: 72px;
+        .article-left {
+          padding-top: 0;
+        }
+        .article-right {
+          padding-top: 0;
+        }
+      }
+      &:last-child {
+        .article-left {
+          padding-bottom: 72px;
+        }
+        .article-right {
+          padding-bottom: 72px;
+          .sec-link-btn {
+            bottom: 72px;
+          }
         }
       }
     }

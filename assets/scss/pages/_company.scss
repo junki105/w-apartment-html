@@ -1,17 +1,23 @@
 
 
 .company {
-  background-image: url(../images/bg_company.png);
+  background: #e5e5e5;
   .content {
     width: 900px;
   }
   .sec-hero {
-    height: 50vh;
-  }
-  .sec-hero-bottom {
-    color: white;
+    background-image: url(../images/bg_company.png);
+    background-size: cover;
+    height: 100vh;
+    .content {
+      height: 50vh;
+      &:last-child {
+        color: white;
+      }
+    }
   }
   &-table {
+    padding-top: 160px;
     h1 {
       font-size: 32px;
       letter-spacing: 0.05em;      

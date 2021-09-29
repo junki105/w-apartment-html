@@ -62,4 +62,9 @@
     font-style: normal;
     font-weight: 400;
   }
+  @if ($type == 'bold') {
+    font-family: tbudgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+  }
 }

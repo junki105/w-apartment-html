@@ -4,7 +4,7 @@
 
 .feature-header {
   .slide-number {
-    left: 20px!important;
+    left: 29px!important;
     font-size: 16px!important;
   }
 }
@@ -41,7 +41,6 @@
       align-items: flex-start;
       width: 840px;
       margin: auto;
-      margin-top: 70px;
       position: relative;
       div {
         width: 50%;
@@ -49,6 +48,8 @@
       }
       .article-left {
         padding-right: 32px;
+        padding-top: 70px;
+        border-right: 1px solid #00000050;
         h2 {
           font-size: 13px;
           color: #506285;
@@ -64,6 +65,7 @@
       }
       .article-right {
         padding-left: 32px;
+        padding-top: 70px;
         h2 {
           font-size: 22px;
           letter-spacing: 0.1em;
@@ -83,6 +85,26 @@
           right: 0;
           margin-top: 0;
           margin-right: 0;
+        }
+      }
+      &:nth-child(2) {
+        margin-top: 70px;
+        .article-left {
+          padding-top: 0;
+        }
+        .article-right {
+          padding-top: 0;
+        }
+      }
+      &:last-child {
+        .article-left {
+          padding-bottom: 70px;
+        }
+        .article-right {
+          padding-bottom: 70px;
+          .sec-link-btn {
+            bottom: 70px;
+          }
         }
       }
     }
