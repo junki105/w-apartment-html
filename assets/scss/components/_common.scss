@@ -4,7 +4,7 @@
   top: 40px;
   left: 50%;
   @include transform(translateX(-50%));
-  z-index: 100;
+  z-index: 151;
   transition: all .7s ease-in-out;
 }
 .scroll-btn {
@@ -91,4 +91,11 @@
       }  
     }
   }
+}
+
+.menu-open {
+  display: flex!important;
+  max-height: 100vh;
+  max-width: 100%;
+  opacity: 1;
 }

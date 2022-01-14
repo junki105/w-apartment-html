@@ -10,7 +10,7 @@
     width: 120px;
     height: 100vh;
     background-size: cover;
-    z-index: 100;
+    z-index: 300;
     transition: all .5s ease-in-out;
     &:nth-child(2) {
       left: 0;
@@ -258,7 +258,7 @@
   position: absolute;
   @include transform(translateY(-50%));
   top: 50%;
-  z-index: 999;
+  z-index: 149;
   img {
     width: 8px;
   }
